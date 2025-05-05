@@ -11,7 +11,6 @@ CHUNK_SIZE = 500
 TOP_K = 3
 
 # ====== GEMINI SETUP ======
-genai.configure(api_key=GEMINI_API_KEY)
 model_embedder = SentenceTransformer('all-MiniLM-L6-v2')
 gen_model = genai.GenerativeModel("models/gemini-1.5-flash")
 
